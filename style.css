@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* External */
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+
+/* Global */
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */ 
+
+header > h1 {
+    background-color: aqua;
+
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2em;
+    text-indent: 20px;
+}
+
+#map{
+    background-color: brown;
+    display: flex;
+}
+
+#cat {
+    background-color: brown;
+    display: flex;
+}
+
+#offer{
+    background-color: brown;
+    display: flex;
+    
+}
