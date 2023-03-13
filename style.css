@@ -1,39 +1,50 @@
 @charset "UTF-8";
 
-/* External */
+/* ------- External ------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
+/*font gun*/
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
-/* Global */
+/* Font Cannabis */
+@font-face {
+    font-family: 'back';
+    src: url(/style/fontes/CFPlantsandFlowers-Regular.ttf) format(truetype);
+}
+
+/* -------  Global ------- */
 
 body, html {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* Header */ 
 
-header > h1 {
+
+header > nav > ul{
     background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    font-family: 'Tilt Warp', cursive;
-    font-size: 2em;
-    text-indent: 20px;
+    list-style-type: none;
 }
 
-#map{
-    background-color: brown;
-    display: flex;
+header > nav > ul > a {
+    text-decoration: none;
+    color: green;
 }
 
-#cat {
-    background-color: brown;
-    display: flex;
+header > nav > ul > a:hover {
+    color: rgb(34, 144, 38);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
 }
 
-#offer{
-    background-color: brown;
-    display: flex;
-    
+header > nav > ul > a > li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
 }
