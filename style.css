@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+/* palets */
+:root{
+--verde-brasil:  #009C39;
+--btc: #f7931b ;
+--marrom-claro: #e3c48b;
+--beje: #fae5a4;
+--beje-verde-01: #e3d58a;
+--beje-verde-02:#e3d58a;
+
+}
+
+
 /* ------- External ------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
@@ -7,44 +19,102 @@
 /*font gun*/
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
-/* Font Cannabis */
-@font-face {
-    font-family: 'back';
-    src: url(/style/fontes/CFPlantsandFlowers-Regular.ttf) format(truetype);
-}
 
 /* -------  Global ------- */
 
-body, html {
+body{
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--beje);
 }
 
 
 /* Header */ 
 
+header{ 
+    
+    background-color: #f7931b;
+}
 
-header > nav > ul{
-    background-color: aqua;
+#logo {
+    margin-top: 2px;
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    display: inline-block;
+}
+
+#titulo {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+}
+
+#titulo > h1 {
+    margin: 0px;
+    font-size: 1.3em;
+    color: white;
+}
+
+/* ------------------------- painel shop ---------------------------- */
+
+.mother{
+    margin-top: -10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    list-style-type: none;
+    background-color: black;
 }
 
-header > nav > ul > a {
+.menu-hamburguer{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    display:block;
+    width: 100px;
+    height: 27px;
+    
+    font-size: 1em;
+    text-align: center;
     text-decoration: none;
-    color: green;
+    color: white;
 }
 
-header > nav > ul > a:hover {
-    color: rgb(34, 144, 38);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+.menu-hamburguer:hover{
+    margin: -2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    color:var(--btc) ;
 }
 
-header > nav > ul > a > li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+.painel{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    display: block;
+    width: 150px;
+    height: 27px;
+    
+    
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.painel:hover {
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    margin: -2px;
+    color:var(--btc) ;
+    
 }
